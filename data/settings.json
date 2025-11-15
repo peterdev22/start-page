@@ -1,45 +1,45 @@
 {
-	"username": "Excalith",
-	"title": "Excalith Start Page",
+	"username": "pk",
+	"title": "New Tab",
 	"theme": {
-		"name": "Default",
-		"backgroundColor": "#121317",
-		"windowColor": "#1e212b",
-		"textColor": "#e2e2e2",
+		"name": "pk-custom",
+		"backgroundColor": "#000000",
+		"windowColor": "#09090B",
+		"textColor": "#DEE3F1",
 		"black": "#16161e",
-		"red": "#ec6183",
-		"green": "#2ed8a2",
-		"yellow": "#e8b195",
-		"blue": "#2bc3de",
-		"magenta": "#d1aff8",
-		"cyan": "#62e0e2",
+		"red": "#FCA5A5",
+		"green": "#86EEAC",
+		"yellow": "#FDDF47",
+		"blue": "#93C5FD",
+		"magenta": "#C4B5FD",
+		"cyan": "#67E7F9",
 		"white": "#e2e2e2",
 		"gray": "#97989d"
 	},
 	"wallpaper": {
-		"url": "assets/default-wallpaper.svg",
+		"url": "assets/bg.jpg",
 		"easing": "ease-in-out",
 		"fadeIn": true,
-		"blur": false
+		"blur": true
 	},
 	"terminal": {
-		"fixedHeight": true,
-		"windowGlow": true,
+		"fixedHeight": false,
+		"windowGlow": false,
 		"windowGlowColor": "#291f3325",
 		"textGlow": false,
-		"opacity": 0,
+		"opacity": 1,
 		"blur": 16
 	},
 	"prompt": {
 		"ctrlC": true,
-		"placeholder": "command...",
+		"placeholder": "search the web...",
 		"placeholderColor": "gray",
 		"userColor": "green",
 		"atColor": "gray",
 		"hostColor": "magenta",
 		"promptColor": "magenta",
 		"promptSymbol": "❯",
-		"caretColor": "green",
+		"caretColor": "blue",
 		"selectionBg": "yellow",
 		"selectionFg": "black"
 	},
@@ -47,7 +47,7 @@
 		"timeFormat": "HH:mm",
 		"dateFormat": "DD/MM/YYYY",
 		"titleColor": "yellow",
-		"image": "assets/default-icon.svg",
+		"image": "",
 		"data": [
 			"Time: {time}",
 			"Date: {date}",
@@ -71,24 +71,9 @@
 		"shortcutRegex": "(!?[A-Za-z0-9]+) (.*)",
 		"shortcuts": [
 			{
-				"alias": "g",
-				"name": "Google Search",
-				"url": "https://google.com/search?q={}"
-			},
-			{
 				"alias": "d",
 				"name": "DuckDuckGo Search",
 				"url": "https://duckduckgo.com/?q={}"
-			},
-			{
-				"alias": "!d",
-				"name": "DuckDuckGo Lucky Search",
-				"url": "https://duckduckgo.com/?q=!ducky+{}"
-			},
-			{
-				"alias": "b",
-				"name": "Brave Search",
-				"url": "https://search.brave.com/search?q={}"
 			},
 			{
 				"alias": "gh",
@@ -96,183 +81,178 @@
 				"url": "https://github.com/search?q={}"
 			},
 			{
-				"alias": "s",
-				"name": "Stack Overflow Search",
-				"url": "https://stackoverflow.com/search?q={}"
-			},
-			{
-				"alias": "r",
-				"name": "Subreddit Search",
-				"url": "https://reddit.com/r/{}"
-			},
-			{
 				"alias": "w",
 				"name": "Wikipedia Search",
 				"url": "https://en.wikipedia.org/wiki/{}"
+			},
+			{
+				"alias": "yt",
+				"name": "YouTube Search",
+				"url": "https://www.youtube.com/results?search_query={}"
 			}
 		]
 	},
 	"sections": {
 		"list": [
 			{
-				"title": "General",
-				"color": "green",
+				"title": "Media",
+				"color": "red",
 				"align": "left",
 				"links": [
 					{
-						"name": "Portfolio",
-						"url": "https://cancellek.com",
+						"name": "-",
+						"url": "/",
 						"icon": "mdi:web"
 					},
 					{
-						"name": "Keybase",
-						"url": "https://keybase.io/",
-						"icon": "fa-brands:keybase"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					},
 					{
-						"name": "GPT",
-						"url": "https://chat.openai.com/",
-						"icon": "simple-icons:openai"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					},
 					{
-						"name": "OCI",
-						"url": "https://www.oracle.com/cloud/",
-						"icon": "simple-icons:oracle"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					}
+				]
+			},
+			{
+				"title": "CAD/Graphics",
+				"color": "blue",
+				"align": "left",
+				"links": [
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					}
 				]
 			},
 			{
 				"title": "Dev",
-				"color": "magenta",
-				"align": "left",
-				"links": [
-					{
-						"name": "GitHub",
-						"url": "https://github.com",
-						"icon": "mdi:github"
-					},
-					{
-						"name": "GitLab",
-						"url": "https://gitlab.com",
-						"icon": "ph:gitlab-logo-simple-fill"
-					},
-					{
-						"name": "Dev.to",
-						"url": "https://dev.to",
-						"icon": "material-symbols:logo-dev"
-					},
-					{
-						"name": "Stack Overflow",
-						"url": "https://stackoverflow.com/",
-						"icon": "mdi:stack-overflow"
-					}
-				]
-			},
-			{
-				"title": "Social",
-				"color": "cyan",
-				"align": "left",
-				"links": [
-					{
-						"name": "Twitter",
-						"url": "https://twitter.com",
-						"icon": "mdi:twitter"
-					},
-					{
-						"name": "Mastodon",
-						"url": "https://mastodon.social/",
-						"icon": "ri:mastodon-fill"
-					},
-					{
-						"name": "Reddit",
-						"url": "https://reddit.com",
-						"icon": "mdi:reddit"
-					},
-					{
-						"name": "Polywork",
-						"url": "https://polywork.com",
-						"icon": "simple-icons:polywork"
-					}
-				]
-			},
-			{
-				"title": "Gaming",
-				"color": "red",
-				"align": "left",
-				"links": [
-					{
-						"name": "Polygon",
-						"url": "https://polygon.com",
-						"icon": "uil:polygon"
-					},
-					{
-						"name": "IGN",
-						"url": "https://ign.com",
-						"icon": "mdi:currency-sign"
-					},
-					{
-						"name": "RPS",
-						"url": "https://rockpapershotgun.com/",
-						"icon": "ph:toilet-paper-bold"
-					},
-					{
-						"name": "80lv",
-						"url": "https://80.lv/",
-						"icon": "tabler:hand-rock"
-					}
-				]
-			},
-			{
-				"title": "Science",
-				"color": "blue",
-				"align": "left",
-				"links": [
-					{
-						"name": "PopSci",
-						"url": "https://popsci.com/",
-						"icon": "material-symbols:science"
-					},
-					{
-						"name": "Space",
-						"url": "fa6-solid:user-astronaut",
-						"icon": "mdi:reddit"
-					},
-					{
-						"name": "NASA",
-						"url": "https://blogs.nasa.gov/",
-						"icon": "simple-icons:nasa"
-					},
-					{
-						"name": "ESA",
-						"url": "https://blogs.esa.int/",
-						"icon": "mdi:black-mesa"
-					}
-				]
-			},
-			{
-				"title": "Tech",
 				"color": "yellow",
 				"align": "left",
 				"links": [
 					{
-						"name": "TechCrunch",
-						"url": "https://techcrunch.com/",
-						"icon": "game-icons:techno-heart"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					},
 					{
-						"name": "Verge",
-						"url": "https://www.theverge.com/",
-						"icon": "arcticons:verge"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					},
 					{
-						"name": "It's Foss",
-						"url": "https://itsfoss.com/",
-						"icon": "ri:mastodon-fill"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					},
 					{
-						"name": "9To5 Linux",
-						"url": "https://9to5linux.com/",
-						"icon": "uil:linux"
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					}
+				]
+			},
+			{
+				"title": "Uni",
+				"color": "green",
+				"align": "left",
+				"links": [
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					}
+				]
+			},
+			{
+				"title": "Personal",
+				"color": "magenta",
+				"align": "left",
+				"links": [
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					}
+				]
+			},
+			{
+				"title": "Tools",
+				"color": "cyan",
+				"align": "left",
+				"links": [
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
+					},
+					{
+						"name": "-",
+						"url": "/",
+						"icon": "mdi:web"
 					}
 				]
 			}
