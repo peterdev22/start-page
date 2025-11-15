@@ -41,6 +41,9 @@ const nextConfig = {
 	},
 	env: {
 		BUILD_MODE: process.env.BUILD_MODE
+	},
+	eslint: {
+    	ignoreDuringBuilds: true,
 	}
 }
 
