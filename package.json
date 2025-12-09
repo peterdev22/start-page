@@ -11,7 +11,10 @@
         "build": "next build",
         "docker:build:amd64": "docker buildx build --load --platform linux/amd64 -t excalith/start-page:latest .",
         "docker:build:arm64": "docker buildx build --load --platform linux/arm64 -t excalith/start-page:latest .",
-        "docker:run": "docker run -d --name excalith-start-page -p 8080:3000 -v excalith-start-page:/app/public/data --restart unless-stopped excalith/start-page:latest"
+        "docker:run": "docker run -d --name excalith-start-page -p 8080:3000 -v excalith-start-page:/app/public/data --restart unless-stopped excalith/start-page:latest",
+        "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+        "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+        "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.16",
@@ -21,15 +24,17 @@
         "eslint-plugin-prettier": "^5.1.2",
         "postcss": "^8.4.32",
         "prettier": "^3.1.1",
-        "tailwindcss": "^3.4.0"
+        "tailwindcss": "^3.4.0",
+        "wrangler": "^4.53.0"
     },
     "dependencies": {
         "@fontsource/fira-code": "^5.0.16",
         "@iconify/react": "^4.1.1",
+        "@opennextjs/cloudflare": "^1.14.4",
         "@serwist/next": "^9.0.11",
         "ace-builds": "^1.32.3",
         "moment": "^2.30.1",
-        "next": "14.0.4",
+        "next": "14.2.33",
         "one-theme-ace": "^0.5.0",
         "react": "18.2.0",
         "react-ace": "^10.1.0",
